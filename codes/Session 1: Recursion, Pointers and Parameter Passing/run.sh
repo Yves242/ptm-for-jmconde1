@@ -4,6 +4,8 @@
 # made with the assistance of the famous AI tool ChatGPT,
 # just to make navigation of peer tutor materials easier for you.
 
+# clear the screen
+clear
 
 # Flag to track if the script has already run
 script_run=false
@@ -28,12 +30,12 @@ select_file() {
     # put choices here
     choices=()
     
-    # Populate choices array with base filenames
+    # Populate choices array with base filenames sorted alphabetically
     while IFS= read -r -d '' file; do
         base_filename=$(basename "$file")
         choices+=("$base_filename")
-    done < <(find . -type f -name "*.c" -print0)
-    
+    done < <(find . -type f -name "*.c" -print0 | sort -z)
+
     # add last choice for quitting/exiting
     choices+=("Quit/Exit")
 
