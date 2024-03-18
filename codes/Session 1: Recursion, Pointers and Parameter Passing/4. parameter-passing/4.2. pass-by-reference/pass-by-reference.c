@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h> // for malloc()
 
 /// @brief Function that returns the sum of two values. 
 /// @param x The first number to be added.
@@ -11,7 +13,6 @@ void sum(int x, int y, int *memory_address_location) {
 
     // it stores the value to a specific memory address.
 
-
     // to store the value, access the memory location using 
     // the previously-discussed '*()' keyword concept. 
     *(memory_address_location) = x+y;
@@ -23,14 +24,17 @@ int main() {
     // variable declarations
     int first_number = 77, second_number = 23;
 
-    // address location where
+    // address location where we place the value
     int *put_returned_value_here;
+
+    // mag assign ng memory sa location
+    put_returned_value_here = (int*) malloc(sizeof(int)*2);
 
     // title notification
     printf("[Pass-by-reference]\n");
 
     // perform pass-by-value
-    sum(77, 23, put_returned_value_here);
+    sum(first_number, second_number, put_returned_value_here);
 
     // print the results
     printf("The sum of %i and %i is %i.\n", first_number, second_number, *(put_returned_value_here));

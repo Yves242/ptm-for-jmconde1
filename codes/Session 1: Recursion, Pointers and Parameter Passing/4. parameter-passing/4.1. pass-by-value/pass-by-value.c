@@ -1,3 +1,4 @@
+#include <stdio.h>
 
 /// @brief Function that returns the sum of two values. 
 /// @param x The first number to be added.
@@ -18,7 +19,7 @@ int main() {
     printf("[Pass-by-value]\n");
 
     // perform pass-by-value
-    returned_value = sum(77, 23);
+    returned_value = sum(first_number, second_number);
 
     // print the results
     printf("The sum of %i and %i is %i.\n", first_number, second_number, returned_value);
