@@ -1,0 +1,10 @@
+# # uncomment if Python or C file
+# run.c.sh
+# run.py.sh
+
+# default github description is:
+# Peer Tutor Materials (PTM) for <full name> (<email>@up.edu.ph) 
+
+# don't track qr generator file and actual image
+gen.image.qr.sh
+qrcode.png
