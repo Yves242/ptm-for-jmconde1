@@ -4,7 +4,7 @@ Welcome to the `Session Codes` directory! This space is dedicated to organizing 
 
 ## Sessions
 
-- **[Session 1](<insert_link_here>) (`<session date>`):** `<add session information here>`
+- **[Session 1](https://github.com/Yves242/ptm-for-jmconde1/tree/main/codes/Session%201%3A%20Recursion%2C%20Pointers%20and%20Parameter%20Passing) (March 18, 2024):** Recursion, Pointers and Parameter Passing
 
 ## Running Instructions
 
